@@ -2,7 +2,6 @@ import {Component, HostBinding, OnInit} from '@angular/core';
 
 import {TranslateService} from '@ngx-translate/core';
 import {CookieService} from 'ngx-cookie-service';
-import {Service} from './service';
 
 @Component({
   selector: 'app-root',

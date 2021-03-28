@@ -1,4 +1,4 @@
-import {Component, HostBinding, OnInit} from '@angular/core';
+import {Component, HostBinding, OnDestroy, OnInit} from '@angular/core';
 import {Movies} from '../movies/movies';
 import {TVShows} from '../tvshows/tvshows';
 import {Service} from '../service';
@@ -21,7 +21,7 @@ export class HomeComponent implements OnInit {
 
   @HostBinding('class') class = 'my-auto col-12';
 
-  ngOnInit(): void {
+  public ngOnInit(): void {
     this.movies = [];
     this.service
       .getListOfGroup(`https://api.themoviedb.org/3/movie/popular?api_key=ccbc42c4b357545c785bb0d1caba6301&language=${this.translateService.currentLang}&page=1`)

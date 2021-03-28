@@ -1,0 +1,22 @@
+{
+  "AppName": "Time2Watch",
+  "Movies": "Movies",
+  "TvShows": "TV shows",
+  "About": "About",
+  "TrendingMovies": "Trending movies",
+  "TrendingTvShows": "Trending tv shows",
+  "Language": "Language",
+  "English": "English",
+  "French": "French",
+  "University": "University of Orléans",
+  "Previous": "Previous",
+  "Next": "Next",
+  "AboutText": "This app was created by Florian Savouré and Antoine Delahaye in conjunction with the IT department of the University of Orléans.",
+  "DownloadText": "If you want, you can download and install the mobile version of Time2Watch on your phone !",
+  "DownloadApp": "Download for Android",
+  "SeasonsNumber": "Number of seasons",
+  "EpisodesNumber": "Total number of episodes",
+  "Seasons": "seasons",
+  "Episodes": "episodes",
+  "Rating": "Your rating"
+}

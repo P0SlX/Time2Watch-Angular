@@ -71,6 +71,11 @@ p {
   display: none;
 }
 
+.delete-rating {
+  color: #A0A9A9;
+}
+
 .delete-rating:hover {
-  color: #dc143c;
+  color: #b84646;
+  cursor: pointer;
 }

@@ -59,6 +59,15 @@ export class MovieComponent implements OnInit, OnDestroy {
     this.r.rate(this.movieID, rating * 2, 'movie');
   }
 
+  removeRating(): void {
+    this.service.deleteJSON(`https://api.themoviedb.org/3/movie/${this.movieID}/rating?api_key=ccbc42c4b357545c785bb0d1caba6301&guest_session_id=78f6d5bb6c2fca5f2278c9ba79783328}`).subscribe(
+      () => {
+        this.currentRate = 0;
+      },
+    () => {}
+    );
+  }
+
   getRating(): any {
     this.service.getListOfGroup(
       'https://api.themoviedb.org/3/guest_session/78f6d5bb6c2fca5f2278c9ba79783328/rated/movies?api_key=ccbc42c4b357545c785bb0d1caba6301&language=fr&sort_by=created_at.asc'
